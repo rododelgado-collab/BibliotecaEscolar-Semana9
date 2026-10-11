@@ -1,0 +1,13 @@
+# Plantilla de configuración para las PRUEBAS UNITARIAS de los DAO.
+#
+# 1. Ejecuta bd/Script_base_pruebas.sql en MySQL Workbench (crea la base biblioteca_test, vacía).
+# 2. Copia este archivo como "db-test.properties" (en la raíz del proyecto, junto al pom.xml).
+# 3. Ajusta usuario y contraseña. Después: mvn test
+#
+# El archivo db-test.properties NO se sube a GitHub (está en .gitignore).
+# Importante: las pruebas borran los datos de las tablas antes de cada test, por eso solo se ejecutan si la
+# base se llama "*_test". Nunca apuntes esto a la base "biblioteca".
+
+db.url=jdbc:mysql://localhost:3306/biblioteca_test
+db.user=root
+db.password=tu_contraseña
