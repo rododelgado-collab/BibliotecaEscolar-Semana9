@@ -33,7 +33,7 @@ src/main/java
 * **DAO**: todo el SQL vive en `dao/impl`; los controladores dependen de interfaces (se prueban con DAOs falsos).
 * **Singleton**: `DatabaseConnection.getInstance()` entrega una única conexión (se reconecta si se cae) y serializa su uso.
 * **Polimorfismo / abstracción / interfaces**: permisos por rol como métodos sobrescritos (`Bibliotecario` vs `UsuarioEstudiante`),
-  clases abstractas `Persona` y `Usuario`, `Estudiante` implementa `Prestable`, los usuarios implementan `Autenticable`.
+  clases abstractas `Persona` y `Usuario`, `Libro` implementa `Prestable` y `Usuario` implementa `Autenticable`; `Estudiante` y `Usuario` heredan de `Persona`.
 * **Concurrencia**: cada préstamo/devolución corre en un hilo (`TareaSegundoPlano`) y el resultado vuelve al hilo de Swing
   con `SwingUtilities.invokeLater`. El método `ControladorPrestamos.registrarPrestamo` es `synchronized` y además la base
   descuenta el stock con `UPDATE libros SET stock = stock - 1 WHERE id = ? AND stock > 0` dentro de una transacción, por lo que
