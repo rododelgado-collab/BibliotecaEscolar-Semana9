@@ -77,4 +77,34 @@ src/main/java
 
 ## Capturas
 
-Ver carpeta `docs/capturas/`.
+**Inicio de sesión**
+
+![Inicio de sesión](docs/capturas/01_login.png)
+
+**Bibliotecario: libros**
+
+![Libros](docs/capturas/02_principal_libros_bibliotecario.png)
+
+**Bibliotecario: estudiantes**
+
+![Estudiantes](docs/capturas/03_estudiantes_bibliotecario.png)
+
+**Bibliotecario: préstamos y devoluciones**
+
+![Préstamos](docs/capturas/04_prestamos_bibliotecario.png)
+
+**Bibliotecario: reportes**
+
+![Reportes](docs/capturas/05_reportes_bibliotecario.png)
+
+**Bibliotecario: categorías**
+
+![Categorías](docs/capturas/06_categorias_bibliotecario.png)
+
+**Estudiante: catálogo, mis préstamos y mis reportes**
+
+![Catálogo del estudiante](docs/capturas/07_est_catalogo.png)
+
+![Préstamos del estudiante](docs/capturas/08_est_prestamos.png)
+
+![Reportes del estudiante](docs/capturas/09_est_reportes.png)
